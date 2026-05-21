@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 120" role="img" aria-label="Hima Cyber">
+  <defs>
+    <linearGradient id="himaShieldStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A2741"/>
+      <stop offset="1" stop-color="#0A2741"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield mark -->
+  <g fill="none" stroke="#0A2741" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Shield outline -->
+    <path d="M58 14 L98 28 V66 C98 88 80 102 58 110 C36 102 18 88 18 66 V28 Z"/>
+  </g>
+  <g fill="none" stroke="#0A2741" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Mountain / circuit peaks -->
+    <path d="M28 78 L46 56 L56 66 L70 44 L88 70"/>
+    <path d="M28 88 L88 88"/>
+    <path d="M28 70 L40 70"/>
+    <!-- Circuit branch -->
+    <path d="M70 44 L80 44 L80 36"/>
+    <path d="M56 66 L56 88"/>
+  </g>
+  <!-- Nodes -->
+  <g fill="#00BAFF">
+    <circle cx="70" cy="44" r="3.4"/>
+    <circle cx="80" cy="36" r="3"/>
+    <circle cx="46" cy="56" r="3"/>
+    <circle cx="56" cy="88" r="2.6"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="118" y="58" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="40" fill="#0A2741" font-style="italic">Hima Cyber</text>
+  <text x="120" y="84" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="15" letter-spacing="0.5" fill="#0A2741">Powered by AI, runs by experts</text>
+</svg>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hima Cyber — Powered by AI, runs by experts</title>
+  <meta name="description" content="Hima Cyber is a premium cybersecurity consulting firm serving the GCC. ISO 27001, GRC advisory, IT audit, secure code review, and penetration testing — powered by AI, runs by experts." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="alternate" hreflang="en" href="./" />
+  <link rel="alternate" hreflang="ar" href="ar/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Hima Cyber home">
+        <img src="assets/logo-nav.svg" alt="Hima Cyber" />
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Approach</a>
+        <a href="#why">Why Hima</a>
+        <a href="ar/" class="nav__lang" hreflang="ar" lang="ar">العربية</a>
+        <a href="#contact" class="btn btn--primary">Book a Consultation</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <span class="hero__badge"><span class="dot"></span> Trusted across the GCC</span>
+          <h1>Cybersecurity that earns<span class="accent">enterprise trust.</span></h1>
+          <p class="hero__tagline">Powered by AI, runs by experts.</p>
+          <p class="hero__sub">Hima Cyber helps GCC organizations build trust, reduce cyber risk, and meet compliance expectations through practical, expert-led cybersecurity consulting.</p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary">Book a Consultation →</a>
+            <a href="#services" class="btn btn--ghost">Explore Services</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat"><div class="n" data-count="99.9" data-suffix="%">99.9%</div><div class="l">Threat Detection</div></div>
+            <div class="hero__stat"><div class="n">6</div><div class="l">GCC Markets</div></div>
+            <div class="hero__stat"><div class="n">24/7</div><div class="l">Expert Monitoring</div></div>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <!-- Shield + neural circuit illustration -->
+          <svg viewBox="0 0 400 440" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="shieldFill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0d3055"/>
+                <stop offset="1" stop-color="#061a2c"/>
+              </linearGradient>
+              <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#00BAFF"/>
+                <stop offset="1" stop-color="#5fd2ff"/>
+              </linearGradient>
+              <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="5" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path d="M200 24 L344 76 V224 C344 314 286 372 200 414 C114 372 56 314 56 224 V76 Z"
+                  fill="url(#shieldFill)" stroke="url(#edge)" stroke-width="3"/>
+            <path d="M200 24 L344 76 V224 C344 314 286 372 200 414 C114 372 56 314 56 224 V76 Z"
+                  fill="none" stroke="rgba(0,186,255,.25)" stroke-width="10"/>
+            <!-- internal circuit -->
+            <g stroke="#00BAFF" stroke-width="2.4" fill="none" opacity=".9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M104 268 L150 210 L182 240 L222 168 L278 248"/>
+              <path d="M104 300 L296 300"/>
+              <path d="M104 252 L132 252"/>
+              <path d="M222 168 L256 168 L256 130"/>
+              <path d="M182 240 L182 300"/>
+              <path d="M150 210 L150 178 L120 178"/>
+            </g>
+            <g fill="#5fd2ff" filter="url(#glow)">
+              <circle cx="222" cy="168" r="6"><animate attributeName="opacity" values="1;.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
+              <circle cx="256" cy="130" r="5"><animate attributeName="opacity" values=".5;1;.5" dur="2.8s" repeatCount="indefinite"/></circle>
+              <circle cx="150" cy="210" r="5"><animate attributeName="opacity" values="1;.5;1" dur="3.1s" repeatCount="indefinite"/></circle>
+              <circle cx="182" cy="300" r="4.4"><animate attributeName="opacity" values=".4;1;.4" dur="2.2s" repeatCount="indefinite"/></circle>
+              <circle cx="120" cy="178" r="4"><animate attributeName="opacity" values=".6;1;.6" dur="3.4s" repeatCount="indefinite"/></circle>
+            </g>
+            <!-- traveling data pulse -->
+            <circle r="4" fill="#FFFFFF" filter="url(#glow)">
+              <animateMotion dur="3.5s" repeatCount="indefinite" path="M104 300 L296 300"/>
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST / REGIONS ============ -->
+  <div class="trust">
+    <div class="container trust__inner">
+      <span class="trust__label">Serving organizations across</span>
+      <div class="trust__regions">
+        <span>Bahrain</span><span>Saudi Arabia</span><span>UAE</span><span>Qatar</span><span>Oman</span><span>Kuwait</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="split">
+        <div class="reveal">
+          <span class="eyebrow">Who we are</span>
+          <h2 style="font-size:clamp(1.9rem,4vw,2.9rem)">Expert-led security, accelerated by AI.</h2>
+          <p style="color:var(--muted);margin-top:18px;">Hima Cyber is a premium cybersecurity consulting firm serving organizations across the GCC. We strengthen your governance, risk, compliance, and technical security posture through expert-led assessments and advisory.</p>
+          <p style="color:var(--muted);margin-top:14px;">Our positioning is simple: we use AI-enabled workflows to improve speed, structure, and insight — while final judgment, delivery quality, and client accountability remain firmly expert-led.</p>
+          <div class="about__points">
+            <div class="about__point">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/></svg></span>
+              <div><h4>Proactive Threat Hunting</h4><p>We find risk before it becomes production exposure.</p></div>
+            </div>
+            <div class="about__point">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
+              <div><h4>Ethical AI Frameworks</h4><p>AI augments our analysts — humans own the final call.</p></div>
+            </div>
+            <div class="about__point">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <div><h4>24/7 Expert Monitoring</h4><p>Continuous oversight from senior security practitioners.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="mv-card">
+            <h3>Our Mission</h3>
+            <p>To redefine the boundaries of digital security by integrating advanced Artificial Intelligence with unmatched human expertise, ensuring a safer connected world for everyone.</p>
+          </div>
+          <div class="mv-card">
+            <h3>Our Vision</h3>
+            <p>To become the global gold standard in cybersecurity, recognized for our proactive intelligence, ethical AI applications, and commitment to technological resilience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Core Services</span>
+        <h2>Comprehensive cybersecurity consulting</h2>
+        <p>From certification readiness to source-code assurance — practical, business-aligned engagements delivered to a premium consulting standard.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <span class="card__num">01</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>ISO 27001 Implementation</h3>
+          <p>Build, implement, and improve an ISMS aligned with ISO/IEC 27001.</p>
+          <ul>
+            <li>Current-state &amp; gap assessment</li>
+            <li>Policy framework &amp; Statement of Applicability</li>
+            <li>Risk treatment &amp; control guidance</li>
+            <li>Certification-readiness support</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">02</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 5-7"/></svg></div>
+          <h3>Governance, Risk &amp; Compliance</h3>
+          <p>Define and manage cyber governance, risk, and compliance obligations.</p>
+          <ul>
+            <li>Governance review &amp; risk register</li>
+            <li>Policy &amp; procedure development</li>
+            <li>Board &amp; management reporting packs</li>
+            <li>Third-party / vendor risk review</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">03</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>IT Audit &amp; Gap Assessment</h3>
+          <p>Independent review of IT controls and security maturity.</p>
+          <ul>
+            <li>ITGC, access &amp; change-management review</li>
+            <li>Backup &amp; recovery controls</li>
+            <li>Maturity assessment</li>
+            <li>Prioritized remediation roadmap</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">04</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+          <h3>Secure Code Review</h3>
+          <p>Identify security weaknesses before they reach production.</p>
+          <ul>
+            <li>Manual secure code review</li>
+            <li>Auth, input validation &amp; business logic</li>
+            <li>OWASP Top 10 coverage</li>
+            <li>Developer-focused remediation guidance</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <span class="card__num">05</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+          <h3>VAPT Support</h3>
+          <p>Authorized vulnerability assessment &amp; penetration testing support.</p>
+          <ul>
+            <li>Scope definition support</li>
+            <li>Vulnerability assessment coordination</li>
+            <li>Findings validation &amp; risk ranking</li>
+            <li>Retest planning</li>
+          </ul>
+        </article>
+        <article class="card reveal" style="display:flex;flex-direction:column;justify-content:center;background:linear-gradient(160deg,rgba(0,186,255,.12),rgba(0,186,255,.03));border-color:var(--card-border)">
+          <h3 style="font-size:1.35rem">Not sure where to start?</h3>
+          <p>Tell us your regulatory drivers and risk priorities — we'll recommend the right engagement.</p>
+          <a href="#contact" class="btn btn--primary" style="margin-top:20px;align-self:flex-start;">Talk to an expert →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Our Approach</span>
+        <h2>A structured, expert-led delivery model</h2>
+        <p>Every engagement follows a clear path from business context to validated remediation.</p>
+      </div>
+      <div class="process">
+        <div class="step reveal"><div class="step__n">01</div><h4>Discovery</h4><p>Understand business context, systems, regulatory drivers, and risk priorities.</p></div>
+        <div class="step reveal"><div class="step__n">02</div><h4>Assessment</h4><p>Evaluate current state through documentation review, interviews, and control testing.</p></div>
+        <div class="step reveal"><div class="step__n">03</div><h4>Findings &amp; Risk Rating</h4><p>Classify issues by impact, likelihood, and business relevance.</p></div>
+        <div class="step reveal"><div class="step__n">04</div><h4>Remediation Roadmap</h4><p>Provide practical, prioritized actions aligned to your risk appetite.</p></div>
+        <div class="step reveal"><div class="step__n">05</div><h4>Executive Reporting</h4><p>Deliver clear management-level reporting suitable for decision-making.</p></div>
+        <div class="step reveal"><div class="step__n">06</div><h4>Follow-up Support</h4><p>Assist with implementation, evidence review, and readiness validation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY / DIFFERENTIATORS ============ -->
+  <section class="section section--alt" id="why">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Why Hima Cyber</span>
+        <h2>The trusted-advisor difference</h2>
+        <p>Sophisticated enough for the C-suite, technical enough for the engineering floor.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card reveal"><h3>GCC-focused perspective</h3><p>Cybersecurity and compliance advisory built around GCC business and regulatory expectations.</p></div>
+        <div class="card reveal"><h3>Premium operating standard</h3><p>The discipline and reporting quality of a top-tier consulting firm on every engagement.</p></div>
+        <div class="card reveal"><h3>Business-aligned reporting</h3><p>Practical findings tied to real business risk — not boilerplate scanner output.</p></div>
+        <div class="card reveal"><h3>AI-enabled efficiency</h3><p>AI accelerates analysis; senior experts retain accountability for every conclusion.</p></div>
+        <div class="card reveal"><h3>Strong governance</h3><p>Clear approval workflows over all client communications, reports, and deliverables.</p></div>
+        <div class="card reveal"><h3>Authorized testing only</h3><p>Security testing is performed strictly under explicitly approved scope.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAND ============ -->
+  <section class="section statband">
+    <div class="container">
+      <div class="statband__grid">
+        <div class="reveal" style="text-align:center;">
+          <div class="bignum"><span class="count" data-count="99.9">0</span><span>%</span></div>
+          <div class="l">Threat Detection Accuracy</div>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Unrivaled Precision</span>
+          <h2 style="font-size:clamp(1.6rem,3.4vw,2.3rem)">Industry-leading accuracy, minimal noise.</h2>
+          <p style="color:var(--muted);margin-top:16px;">Our AI algorithms, continuously refined by expert security analysts, achieve industry-leading accuracy in identifying zero-day vulnerabilities and advanced persistent threats (APTs).</p>
+          <p style="color:var(--muted);margin-top:12px;">By minimizing false positives, we let your team focus on real risks — without operational friction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h3>Secure your organization with confidence.</h3>
+          <p>Tell us about your environment and goals. We'll respond with a clear, no-obligation recommendation.</p>
+          <div class="contact__item">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg></span>
+            <div class="t"><span>General Enquiries</span><a href="mailto:info@himacyber.com">info@himacyber.com</a></div>
+          </div>
+          <div class="contact__item">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg></span>
+            <div class="t"><span>Business Development</span><a href="mailto:kevin@himacyber.com">kevin@himacyber.com</a></div>
+          </div>
+          <div class="contact__item">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg></span>
+            <div class="t"><span>Website</span><b>www.himacyber.com</b></div>
+          </div>
+        </div>
+        <form id="contactForm" class="reveal" onsubmit="return false;">
+          <div class="field"><label for="name">Full name</label><input id="name" type="text" placeholder="Your name" required /></div>
+          <div class="field"><label for="email">Work email</label><input id="email" type="email" placeholder="you@company.com" required /></div>
+          <div class="field"><label for="company">Company</label><input id="company" type="text" placeholder="Company name" /></div>
+          <div class="field"><label for="service">Service of interest</label>
+            <select id="service">
+              <option>ISO 27001 Implementation</option>
+              <option>Governance, Risk &amp; Compliance</option>
+              <option>IT Audit &amp; Gap Assessment</option>
+              <option>Secure Code Review</option>
+              <option>VAPT Support</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field"><label for="msg">How can we help?</label><textarea id="msg" placeholder="Briefly describe your goals or regulatory drivers"></textarea></div>
+          <button class="btn btn--primary" type="submit">Request Consultation →</button>
+          <p class="form-note">Sends to info@himacyber.com via your email app. Prefer to write directly? <a href="mailto:info@himacyber.com" style="color:var(--cyber)">info@himacyber.com</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-light.svg" alt="Hima Cyber" />
+          <p>Premium cybersecurity consulting for the GCC. We help organizations build trust, reduce cyber risk, and meet compliance expectations.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <a href="#services">ISO 27001 Implementation</a>
+          <a href="#services">Governance, Risk &amp; Compliance</a>
+          <a href="#services">IT Audit &amp; Gap Assessment</a>
+          <a href="#services">Secure Code Review</a>
+          <a href="#services">VAPT Support</a>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <a href="#about">About</a>
+          <a href="#process">Our Approach</a>
+          <a href="#why">Why Hima Cyber</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year"></span> Hima Cyber. All rights reserved.</p>
+        <p>Powered by AI, runs by experts.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
