@@ -228,7 +228,8 @@ form .btn { width: 100%; justify-content: center; margin-top: 6px; }
 /* ---------- Footer ---------- */
 .footer { background: var(--navy-900); padding: 60px 0 30px; border-top: 1px solid rgba(255,255,255,.06); }
 .footer__top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-.footer__brand img { height: 48px; margin-bottom: 16px; }
+.footer__brand img { height: 72px; width: auto; margin-bottom: 18px; }
+@media (max-width: 560px) { .footer__brand img { height: 60px; } }
 .footer__brand p { color: var(--muted); font-size: .92rem; max-width: 320px; }
 .footer__col h5 { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--cyber); margin-bottom: 16px; }
 .footer__col a { display: block; color: var(--muted); font-size: .92rem; margin-bottom: 10px; transition: color .2s; }
