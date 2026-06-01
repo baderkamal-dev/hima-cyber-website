@@ -89,7 +89,9 @@ a { color: inherit; text-decoration: none; }
   padding: 12px 0;
 }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; }
-.nav__logo img { height: 42px; display: block; }
+.nav__logo img { height: 52px; width: auto; display: block; }
+.nav.scrolled .nav__logo img { height: 44px; }
+@media (max-width: 560px) { .nav__logo img { height: 44px; } }
 .nav__links { display: flex; align-items: center; gap: 34px; }
 .nav__links a { font-size: 0.92rem; font-weight: 600; color: var(--muted); transition: color .2s; }
 .nav__links a:hover { color: var(--white); }
