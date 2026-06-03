@@ -309,7 +309,8 @@ form { background: var(--card); border: 1px solid rgba(255,255,255,.08); border-
 }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--cyber); background: rgba(0,186,255,.05); }
 .field textarea { resize: vertical; min-height: 110px; }
-.field select option { background: var(--navy-900); }
+.field select option { background: var(--navy-900); color: var(--white); }
+.field select optgroup { background: var(--navy-900); color: var(--cyber); font-weight: 700; }
 form .btn { width: 100%; justify-content: center; margin-top: 6px; }
 .form-note { font-size: .8rem; color: var(--muted-dim); margin-top: 14px; text-align: center; }
 

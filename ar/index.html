@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,600;0,800;1,800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles.css?v=5" />
+  <link rel="stylesheet" href="../styles.css?v=6" />
 </head>
 <body>
 
@@ -281,11 +281,33 @@
           <div class="field"><label for="company">الشركة</label><input id="company" type="text" placeholder="اسم الشركة" /></div>
           <div class="field"><label for="service">الخدمة محل الاهتمام</label>
             <select id="service">
-              <option>تطبيق معيار ISO 27001</option>
-              <option>الحوكمة والمخاطر والامتثال</option>
-              <option>تدقيق تقنية المعلومات وتقييم الفجوات</option>
-              <option>مراجعة الشيفرة البرمجية الآمنة</option>
-              <option>دعم تقييم الثغرات واختبار الاختراق</option>
+              <optgroup label="الدفاع السيبراني والأمن الهجومي">
+                <option>إدارة الثغرات واختبار الاختراق (VAPT)</option>
+                <option>أمن التطبيقات ومراجعة الشيفرة المتخصصة</option>
+                <option>مراجعات الإعداد والتحصين الأمني</option>
+                <option>الهندسة الاجتماعية ومحاكاة الخصوم</option>
+              </optgroup>
+              <optgroup label="الحوكمة والمخاطر والامتثال التنظيمي">
+                <option>جاهزية نظام إدارة أمن المعلومات (ISO 27001 / 9001 / NIST CSF)</option>
+                <option>ضمان شهادة أرامكو السعودية CCC وCCC+</option>
+                <option>الامتثال لإطار الهيئة الوطنية للأمن السيبراني (ECC وCSCC)</option>
+                <option>حوكمة وسلامة وأخلاقيات الذكاء الاصطناعي (ISO 42001)</option>
+                <option>حماية دورة حياة البيانات وهندسة الخصوصية</option>
+                <option>العناية الواجبة لتقنية المعلومات في الاندماج والاستحواذ</option>
+              </optgroup>
+              <optgroup label="مرونة الأعمال والاستجابة للحوادث">
+                <option>استمرارية الأعمال والتعافي من الكوارث (ISO 22301)</option>
+                <option>إدارة الأزمات والاستجابة للحوادث</option>
+                <option>التحقيق الجنائي الرقمي وما بعد الاختراق</option>
+              </optgroup>
+              <optgroup label="الهوية الرقمية وتمكين القوى العاملة">
+                <option>حوكمة الهوية وضمان الوصول (IAM)</option>
+                <option>أكاديمية ISO للتنفيذيين والممارسين</option>
+                <option>توفير الكفاءات البشرية الاستراتيجية</option>
+              </optgroup>
+              <optgroup label="الأتمتة من الجيل القادم وتطبيق الذكاء الاصطناعي">
+                <option>تنفيذ ونشر وكلاء الذكاء الاصطناعي للمؤسسات</option>
+              </optgroup>
               <option>لست متأكداً بعد</option>
             </select>
           </div>
