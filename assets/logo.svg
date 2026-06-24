@@ -28,5 +28,5 @@
   </g>
   <!-- Wordmark -->
   <text x="118" y="58" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="40" fill="#0A2741" font-style="italic">Hima Cyber</text>
-  <text x="120" y="84" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="15" letter-spacing="0.5" fill="#0A2741">Powered by AI, runs by experts</text>
+  <text x="120" y="84" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="13.5" letter-spacing="0.25" fill="#0A2741">Powered by AI, managed by experts</text>
 </svg>
